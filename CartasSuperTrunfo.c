@@ -221,7 +221,7 @@ int main() {
     */
 
 
-    if (media > 0.571428571) printf("Carta 1 Ganhou!");
+    if (media > 0.57142857) printf("Carta 1 Ganhou!");
     else (printf("Carta 2 ganhou!"));
     printf("\n");
     
