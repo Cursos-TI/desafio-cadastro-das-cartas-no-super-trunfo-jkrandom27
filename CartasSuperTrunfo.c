@@ -39,8 +39,8 @@ int main(){
     float pib_capita2 = pib2 / (float) populacao2;
 
     //Cálculo do Super Poder
-    float superpoder = ((float) populacao + area + pib + (float) p_turisticos + pib_capita) - densidade;
-    float superpoder2 = ((float) populacao2 + area2 + pib2 + (float) p_turisticos2 + pib_capita2) - densidade2;
+    float superpoder = ((float) populacao + area + pib + (float) p_turisticos + pib_capita + ( 1.0f / densidade));
+    float superpoder2 = ((float) populacao2 + area2 + pib2 + (float) p_turisticos2 + pib_capita2 + ( 1.0f / densidade));
 
     //Imprimindo resultados
     printf("Comparando as duas cartas...\n");
