@@ -67,8 +67,8 @@ int main(){
     pibCapita = (float) (pib * 1000000000) / populacao;
     densidade2 = (float) populacao2 / area2;
     pibCapita2 = (float) (pib2 * 1000000000) / populacao2;
-    superpoder = (float) (populacao + area + pib + pTuristicos + pibCapita) - densidade;
-    superpoder2 = (float) (populacao2 + area2 + pib2 + pTuristicos2 + pibCapita2) - densidade2;
+    superpoder = (float) (populacao + area + pib + pTuristicos + pibCapita + 1.0/densidade2);
+    superpoder2 = (float) (populacao2 + area2 + pib2 + pTuristicos2 + pibCapita2 + 1.0/densidade2);
 
     //Mostrar dados
 
@@ -102,39 +102,39 @@ int main(){
     printf("\nComprarando as duas cartas...\n");
     printf("\nCarta 1\n");
     if (populacao > populacao2){
-        printf("População: Carta 1 venceu (%d)\n", populacao > populacao2);
+        printf("População: Carta 1 venceu\n");
     } else {
-        printf("População: Carta 2 venceu (%d)\n", populacao > populacao2);
+        printf("População: Carta 2 venceu\n");
         }
     if (area > area2){
-        printf("Área: Carta 1 venceu (%d)\n", area > area2);
+        printf("Área: Carta 1 venceu\n");
     } else {
-        printf("Área: Carta 2 venceu (%d)\n", area > area2);
+        printf("Área: Carta 2 venceu\n");
         }
     if (pib > pib2){
-        printf("PIB: Carta 1 venceu (%d)\n", pib > pib2);
+        printf("PIB: Carta 1 venceu\n");
     } else {
-        printf("PIB: Carta 2 venceu (%d)\n", pib > pib2);;
+        printf("PIB: Carta 2 venceu\n");;
         }
     if (pTuristicos > pTuristicos2){
-        printf("N° de pontos turísticos: Carta 1 venceu (%d)\n", pTuristicos > pTuristicos2);
+        printf("N° de pontos turísticos: Carta 1 venceu\n");
     } else {
-        printf("N° de pontos turísticos: Carta 2 venceu (%d)\n", pTuristicos > pTuristicos2);
+        printf("N° de pontos turísticos: Carta 2 venceu\n");
         }
-    if (densidade < densidade2){
-        printf("Densidade populacional: Carta 1 venceu (%d)\n", densidade > densidade2);
+    if (densidade > densidade2){
+        printf("Densidade populacional: Carta 1 venceu\n");
     } else {
-        printf("Densidade populacional: Carta 2 venceu (%d)\n", densidade > densidade2);
+        printf("Densidade populacional: Carta 2 venceu\n");
         }
     if (pibCapita > pibCapita2){
-        printf("Pib per capita: Carta 1 venceu (%d)\n", pibCapita > pibCapita2);
+        printf("Pib per capita: Carta 1 venceu\n");
     } else {
-        printf("Pib per capita: Carta 2 venceu (%d)\n", pibCapita > pibCapita2);
+        printf("Pib per capita: Carta 2 venceu\n");
         }
     if (superpoder > superpoder2){
-        printf("Super poder: Carta 1 venceu (%d)\n", superpoder > superpoder2);
+        printf("Super poder: Carta 1 venceu\n");
     } else {
-        printf("Super poder: Carta 2 venceu (%d)\n", superpoder > superpoder2);
+        printf("Super poder: Carta 2 venceu\n");
         }
 
 
