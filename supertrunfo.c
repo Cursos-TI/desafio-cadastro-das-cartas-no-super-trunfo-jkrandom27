@@ -136,6 +136,9 @@ int main(){
     } else {
         printf("Super poder: Carta 2 venceu (%d)\n", superpoder > superpoder2);
         }
+
+
+        
     
     return 0;
 
